@@ -1,26 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="add_weighted.cuh">
-      <Filter>CUDA Source</Filter>
-    </ClInclude>
-    <ClInclude Include="blur.cuh">
-      <Filter>CUDA Source</Filter>
-    </ClInclude>
-    <ClInclude Include="add_weighted.hpp">
-      <Filter>Orig Source</Filter>
-    </ClInclude>
-    <ClInclude Include="blur.hpp">
-      <Filter>Orig Source</Filter>
-    </ClInclude>
-    <ClInclude Include="ppm.hpp">
-      <Filter>Orig Source</Filter>
-    </ClInclude>
-    <ClInclude Include="unsharp_mask.hpp">
-      <Filter>Orig Source</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="CUDA Source">
       <UniqueIdentifier>{dc89e080-72fd-45d3-bbbc-ce51269d1c10}</UniqueIdentifier>
     </Filter>
@@ -29,12 +9,32 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <CudaCompile Include="unsharp_mask.cu">
+    <ClInclude Include="CUDA Source\add_weighted.cuh">
+      <Filter>CUDA Source</Filter>
+    </ClInclude>
+    <ClInclude Include="CUDA Source\blur.cuh">
+      <Filter>CUDA Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Original Source\add_weighted.hpp">
+      <Filter>Orig Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Original Source\blur.hpp">
+      <Filter>Orig Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Original Source\ppm.hpp">
+      <Filter>Orig Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Original Source\unsharp_mask.hpp">
+      <Filter>Orig Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="CUDA Source\unsharp_mask.cu">
       <Filter>CUDA Source</Filter>
     </CudaCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="unsharp_mask.cpp">
+    <ClCompile Include="Original Source\unsharp_mask.cpp">
       <Filter>Orig Source</Filter>
     </ClCompile>
   </ItemGroup>

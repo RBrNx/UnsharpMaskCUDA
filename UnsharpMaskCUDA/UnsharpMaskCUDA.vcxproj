@@ -19,18 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="add_weighted.cuh" />
-    <ClInclude Include="add_weighted.hpp" />
-    <ClInclude Include="blur.cuh" />
-    <ClInclude Include="blur.hpp" />
-    <ClInclude Include="ppm.hpp" />
-    <ClInclude Include="unsharp_mask.hpp" />
+    <ClInclude Include="CUDA Source\add_weighted.cuh" />
+    <ClInclude Include="CUDA Source\blur.cuh" />
+    <ClInclude Include="Original Source\add_weighted.hpp" />
+    <ClInclude Include="Original Source\blur.hpp" />
+    <ClInclude Include="Original Source\ppm.hpp" />
+    <ClInclude Include="Original Source\unsharp_mask.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="unsharp_mask.cpp" />
+    <CudaCompile Include="CUDA Source\unsharp_mask.cu" />
   </ItemGroup>
   <ItemGroup>
-    <CudaCompile Include="unsharp_mask.cu" />
+    <ClCompile Include="Original Source\unsharp_mask.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{072EED05-F692-45E7-AC06-3281ECFC096D}</ProjectGuid>
@@ -82,6 +82,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA\Original Source;D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA\CUDA Source;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
