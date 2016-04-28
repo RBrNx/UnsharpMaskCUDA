@@ -27,6 +27,9 @@
   <ItemGroup>
     <ClCompile Include="unsharp_mask.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="unsharp_mask.cu" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{072EED05-F692-45E7-AC06-3281ECFC096D}</ProjectGuid>
     <RootNamespace>UnsharpMaskCUDA</RootNamespace>
