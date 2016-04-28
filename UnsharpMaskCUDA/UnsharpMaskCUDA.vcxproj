@@ -19,7 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="add_weighted.cuh" />
     <ClInclude Include="add_weighted.hpp" />
+    <ClInclude Include="blur.cuh" />
     <ClInclude Include="blur.hpp" />
     <ClInclude Include="ppm.hpp" />
     <ClInclude Include="unsharp_mask.hpp" />
