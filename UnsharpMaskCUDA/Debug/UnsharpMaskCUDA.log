@@ -1,19 +1,56 @@
-﻿Build started 28/04/2016 17:25:05.
+﻿Build started 03/05/2016 20:37:47.
      1>Project "D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA\UnsharpMaskCUDA.vcxproj" on node 2 (Build target(s)).
      1>AddCudaCompileDeps:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c "D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA\unsharp_mask.cu" 
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c "D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA\CUDA Source\unsharp_mask.cu" 
        CudaBuild:
-         Compiling CUDA source file unsharp_mask.cu...
-         cmd.exe /C "C:\Users\RBrNx\AppData\Local\Temp\tmp71e5520b22dd42799b42a52bd50712b0.cmd"
-         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\unsharp_mask.cu.obj "D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA\unsharp_mask.cu"
+         Compiling CUDA source file CUDA Source\unsharp_mask.cu...
+         cmd.exe /C "C:\Users\RBrNx\AppData\Local\Temp\tmp8cfd8537903242b39a86402026042d7f.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\unsharp_mask.cu.obj "D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA\CUDA Source\unsharp_mask.cu"
          
-         D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\unsharp_mask.cu.obj "D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA\unsharp_mask.cu" 
+         D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\unsharp_mask.cu.obj "D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA\CUDA Source\unsharp_mask.cu" 
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\cuda source\blurGPU.cuh(26): warning : variable "nsamples" was declared but never referenced
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\cuda source\gauss_calculator.cuh(11): warning : variable "PI" was declared but never referenced
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(41): warning : variable "nsamples" was declared but never referenced
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\cuda source\blurGPU.cuh(26): warning : variable "nsamples" was declared but never referenced
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\cuda source\gauss_calculator.cuh(11): warning : variable "PI" was declared but never referenced
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(41): warning : variable "nsamples" was declared but never referenced
          unsharp_mask.cu
-     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\ppm.hpp(65): warning C4244: 'argument' : conversion from 'std::streamoff' to 'unsigned int', possible loss of data
-     1>D:/Uni Stuff/Visual Studio 2013/Projects/UnsharpMaskCUDA/UnsharpMaskCUDA/unsharp_mask.cu(14): warning C4244: 'argument' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA\Original Source\ppm.hpp(65): warning C4244: 'argument' : conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\cuda source\gauss_calculator.cuh(4): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\cuda source\gauss_calculator.cuh(8): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\cuda source\gauss_calculator.cuh(16): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(12): warning C4018: '>=' : signed/unsigned mismatch
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(13): warning C4018: '>=' : signed/unsigned mismatch
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(22): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(23): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(24): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(31): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(32): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(45): warning C4018: '>=' : signed/unsigned mismatch
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(46): warning C4018: '>=' : signed/unsigned mismatch
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(55): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(56): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(57): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(61): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\blur.cuh(62): warning C4018: '<' : signed/unsigned mismatch
+     1>D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA\Original Source\unsharp_mask.cuh(14): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA\Original Source\unsharp_mask.cuh(16): warning C4244: 'argument' : conversion from 'float' to 'const int', possible loss of data
+     1>D:/Uni Stuff/Visual Studio 2013/Projects/UnsharpMaskCUDA/UnsharpMaskCUDA/CUDA Source/unsharp_mask.cu(17): warning C4244: 'argument' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>D:/Uni Stuff/Visual Studio 2013/Projects/UnsharpMaskCUDA/UnsharpMaskCUDA/CUDA Source/unsharp_mask.cu(26): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>D:/Uni Stuff/Visual Studio 2013/Projects/UnsharpMaskCUDA/UnsharpMaskCUDA/CUDA Source/unsharp_mask.cu(28): warning C4244: 'argument' : conversion from 'float' to 'const int', possible loss of data
+     1>D:/Uni Stuff/Visual Studio 2013/Projects/UnsharpMaskCUDA/UnsharpMaskCUDA/CUDA Source/unsharp_mask.cu(31): warning C4244: 'argument' : conversion from 'float' to 'size_t', possible loss of data
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\add_weighted.cuh(11): warning C4018: '<' : signed/unsigned mismatch
+                 D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\UnsharpMaskCUDA\Original Source\unsharp_mask.cuh(19) : see reference to function template instantiation 'void add_weighted<float>(unsigned char *,const unsigned char *,const T,const unsigned char *,const T,const T,const unsigned int,const unsigned int,const unsigned int)' being compiled
+                 with
+                 [
+                     T=float
+                 ]
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\add_weighted.cuh(12): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\add_weighted.cuh(16): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\add_weighted.cuh(19): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
+     1>d:\uni stuff\visual studio 2013\projects\unsharpmaskcuda\unsharpmaskcuda\original source\add_weighted.cuh(22): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
        Link:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\Debug\UnsharpMaskCUDA.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\Debug\UnsharpMaskCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\Debug\UnsharpMaskCUDA.lib" /MACHINE:X86 Debug\unsharp_mask.cu.obj
-         Debug\unsharp_mask.obj
          UnsharpMaskCUDA.vcxproj -> D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\Debug\UnsharpMaskCUDA.exe
        PostBuildEvent:
          echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "D:\Uni Stuff\Visual Studio 2013\Projects\UnsharpMaskCUDA\Debug\"
@@ -27,4 +64,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.43
+Time Elapsed 00:00:10.73

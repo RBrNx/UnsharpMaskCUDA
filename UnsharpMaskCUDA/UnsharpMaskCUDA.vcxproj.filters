@@ -9,22 +9,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CUDA Source\add_weighted.cuh">
-      <Filter>CUDA Source</Filter>
-    </ClInclude>
-    <ClInclude Include="CUDA Source\blur.cuh">
-      <Filter>CUDA Source</Filter>
-    </ClInclude>
-    <ClInclude Include="Original Source\add_weighted.hpp">
-      <Filter>Orig Source</Filter>
-    </ClInclude>
-    <ClInclude Include="Original Source\blur.hpp">
-      <Filter>Orig Source</Filter>
-    </ClInclude>
     <ClInclude Include="Original Source\ppm.hpp">
       <Filter>Orig Source</Filter>
     </ClInclude>
-    <ClInclude Include="Original Source\unsharp_mask.hpp">
+    <ClInclude Include="CUDA Source\gauss_calculator.cuh">
+      <Filter>CUDA Source</Filter>
+    </ClInclude>
+    <ClInclude Include="CUDA Source\add_weightedGPU.cuh">
+      <Filter>CUDA Source</Filter>
+    </ClInclude>
+    <ClInclude Include="CUDA Source\blurGPU.cuh">
+      <Filter>CUDA Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Original Source\add_weighted.cuh">
+      <Filter>Orig Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Original Source\blur.cuh">
+      <Filter>Orig Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Original Source\unsharp_mask.cuh">
       <Filter>Orig Source</Filter>
     </ClInclude>
   </ItemGroup>
@@ -32,10 +35,5 @@
     <CudaCompile Include="CUDA Source\unsharp_mask.cu">
       <Filter>CUDA Source</Filter>
     </CudaCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Original Source\unsharp_mask.cpp">
-      <Filter>Orig Source</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

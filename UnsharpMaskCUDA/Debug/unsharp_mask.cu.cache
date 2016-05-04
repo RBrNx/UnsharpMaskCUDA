@@ -1,4 +1,4 @@
-Identity=unsharp_mask.cu
+Identity=CUDA Source\unsharp_mask.cu
 AdditionalCompilerOptions=
 AdditionalCompilerOptions=
 AdditionalDependencies=

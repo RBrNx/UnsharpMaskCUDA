@@ -19,18 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CUDA Source\add_weighted.cuh" />
-    <ClInclude Include="CUDA Source\blur.cuh" />
-    <ClInclude Include="Original Source\add_weighted.hpp" />
-    <ClInclude Include="Original Source\blur.hpp" />
+    <ClInclude Include="CUDA Source\add_weightedGPU.cuh" />
+    <ClInclude Include="CUDA Source\blurGPU.cuh" />
+    <ClInclude Include="CUDA Source\gauss_calculator.cuh" />
+    <ClInclude Include="Original Source\add_weighted.cuh" />
+    <ClInclude Include="Original Source\blur.cuh" />
     <ClInclude Include="Original Source\ppm.hpp" />
-    <ClInclude Include="Original Source\unsharp_mask.hpp" />
+    <ClInclude Include="Original Source\unsharp_mask.cuh" />
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="CUDA Source\unsharp_mask.cu" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Original Source\unsharp_mask.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{072EED05-F692-45E7-AC06-3281ECFC096D}</ProjectGuid>
